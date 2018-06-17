@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.min.css"/>
+      <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+      <style>
+      </style>
+   </head>
+<body>
+	<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="/home/">E-ComStore</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+		      <li class="active"><a href="/home/">Home</a></li>
+
+		    </ul>
+		<ul class="nav navbar-nav navbar-right">
+	      <li><a href="/viewcart/"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+	      <li><a href="/logout/"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+	    </ul>
+	  </div>
+	  
+	</nav> -->
+	<div class='row' style="margin-top:60px">
+		<form method="POST">
+			{% csrf_token %}
+			{{f.as_p}}
+			<input type="Submit" value="Add" name="address">
+			
+		</form>
+		
+	</div>	      
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<div class='row' style="margin-top:60px">
+		<div class='col-md-4'></div>
+		<div class='col-md-4'>
+			{% for i in f %}
+			<a href="/prodet/{{i.slug}}/">
+			<table class="table table-striped">
+				<tbody>
+					
+				<tr>
+					<img src="/media/{{i.image}}" style="height: 200px; width:300px;">
+						
+				</tr>
+				<tr>
+					<td><p>Name</p></td>
+					<td><p>{{i.name}}</p></td>
+				
+				</tr>
+				<tr>
+					<td><p>Brand</p></td>
+					<td><p>{{i.brand}}</p></td>
+				
+				</tr>
+				<tr>
+					<td><p>price</p></td>
+					<td><p>Rs.{{i.price}}</p></td>
+				
+				</tr>
+				
+				<!-- <tr>
+					<td><a href="/prodet/{{i.slug}}/">Details</a></td>
+				</tr> -->
+									
+				</tbody>
+				</table>
+				</a>
+				{% endfor %}
+		</div>
+			
+	</div>
+
+{% endblock %}

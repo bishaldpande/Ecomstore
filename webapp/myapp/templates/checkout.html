@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-responsive.min.css"/>
+      <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+      <style>
+      </style>
+   </head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<center><strong>Billing Dettails</strong></center><br/><br/>
+		<table class='table'>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>quantity</th>
+			<th>total price</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for i in f %}
+		<tr>
+			<td>{{i.product.name}}</td>
+			<td>{{i.quantity}}</td>
+			<td>{{i.total_price}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+	</table> 
+	</div>
+</div>   
+</body>
+</html>

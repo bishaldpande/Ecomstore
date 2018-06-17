@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/order/checkout/" method="POST">
+		<script type="text/javascript" src= "https://checkout.stripe.com/checkout.js" class="stripe-button"
+		data-key="{{stripe_key}}" 
+		data-amount="2000"
+		data-name="YourAPP"
+		data-description="describe"
+		data-image="Link to image"
+		data-currency="usd" 
+		>
+
+			
+		</script>
+		
+	</form>
+
+</body>
+</html>

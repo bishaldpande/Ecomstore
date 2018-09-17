@@ -146,5 +146,5 @@ EMAIL_USE_TLS = True
 #     ]
 # }
 
-STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_SECRET_KEY","pk_test_2NvqZP8kOaRyIPStsivlZRy0")
-STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY","sk_test_JjFmvSwqZic9egGjmwjMor3y")
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_SECRET_KEY","pk_test_")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY","sk_test_")
